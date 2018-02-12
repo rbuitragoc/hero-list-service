@@ -42,11 +42,4 @@ public class HelloController {
 				.build();
 	}
 	
-	@GET
-	@Path("/{heroName}")
-	@Produces("application/json")
-	public Hero getHero(@PathParam("heroName") String heroName) {
-		return HEROES.get(3);
-	}
-
 }
