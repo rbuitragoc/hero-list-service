@@ -16,7 +16,7 @@ import angular.io.services.model.Hero;
 
 @Component
 @Path("/heroes")
-public class HelloController {
+public class HeroesController {
 	
 	private static final List<Hero> HEROES = new ArrayList<Hero>() {
 		{

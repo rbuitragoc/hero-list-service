@@ -23,7 +23,7 @@ public class HeroListServiceApplication extends SpringBootServletInitializer {
 
 	@Bean
 	public ServletRegistrationBean jerseyServlet() {
-		ServletRegistrationBean reg = new ServletRegistrationBean(new ServletContainer(), "/*");
+		ServletRegistrationBean reg = new ServletRegistrationBean(new ServletContainer(), "/api/*");
 		reg.addInitParameter(ServletProperties.JAXRS_APPLICATION_CLASS, JerseyConfig.class.getName());
 		return reg;
 	}
